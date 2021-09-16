@@ -15,7 +15,9 @@ l.append("apple")
 print(l)
 
 # 5. Вставьте в середину списка еще одно слово
-l.insert(2, "iphone")
+mid_l = len(l)//2
+#print(mid_l)
+l.insert(mid_l,"iphone")
 print(l)
 
 # 6. Удалите первое слово из списка.
@@ -24,5 +26,5 @@ print(l)
 
 # 7. Удалите слово «world» из списка, если оно есть в списке.
 if "world" in l:
-l.remove("world")
+    l.remove("world")
     print(l)

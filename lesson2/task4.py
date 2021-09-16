@@ -22,5 +22,5 @@ print(thisdict)
 print(len(thisdict["ingredients"]))
 
 # 5. Удалите из словаря значение с ключом «description»
-del thisdict["price"]
+thisdict.pop("description")
 print(thisdict)
