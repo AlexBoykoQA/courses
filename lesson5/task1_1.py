@@ -8,16 +8,17 @@
 #* (дополнительное) Можете в конструкторе проверить, что в год рождения меньше или равно 2020 (текущий год – для продвинутых), но больше или равно 1900. Если нет, вызывайте исключение
 import datetime
 
+
 class Person:
     """Person description ..."""
 
-    def __init__(self, full_name="", year=None):
+    def __init__(self, full_name, year):
 
         if len(full_name.strip().split(' ')) != 2:
-            raise Exception("Invalid fullname")
+            raise ValueError("Invalid fullname")
 
         if year > datetime.datetime.now().year or year < 1900:
-            raise Exception("Invalid year")
+            raise ValueError("Invalid year")
 
         self.full_name = full_name
         self.year = year
