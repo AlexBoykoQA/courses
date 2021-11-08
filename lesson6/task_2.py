@@ -1,3 +1,4 @@
+
 def song_la_la_la(rows_count = 3, count = 3, end = 0):
 
     rows = []
