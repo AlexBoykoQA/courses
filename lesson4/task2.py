@@ -10,7 +10,9 @@ def number_validator():
             break
     return number
 
-number_validator()
+
+if __name__ == "__main__":
+    number_validator()
 
 #2)Пишем функцию, которая попросит пользователя ввести слово (строка без пробелов в середине,
 #а вначале и в конце пробелы могут быть – их стоит удалить перед проверкой).
@@ -26,12 +28,15 @@ def word_validator():
             break
     return word
 
-word_validator()
+
+if __name__ == "__main__":
+    word_validator()
 
 #3)	Функция принимает три числа a, b, c. Функция должна определить,
 # существует ли треугольник с такими сторонами и если существует, то возвращает тип треугольника
 # Equilateral triangle (равносторонний), Isosceles triangle (равнобедренный),
 # Versatile triangle (разносторонний) или не треугольник (Not a triangle).
+
 
 def triangle_type(a, b, c):
 
@@ -49,7 +54,9 @@ def triangle_type(a, b, c):
     else:
         return 'Not a triangle'
 
-print(triangle_type(4, 4, 4))
+
+if __name__ == "__main__":
+    print(triangle_type(4, 4, 4))
 
 #4 Даны четыре действительных числа: x1, y1, x2, y2. Напишите функцию distance(x1, y1, x2, y2),
 # вычисляющую расстояние между точками с координатами (x1, y1) и (x2, y2).
@@ -59,21 +66,25 @@ from math import sqrt
 def distance(x1, y1, x2, y2):
     return sqrt((x1 - x2)**2 + (y1 - y2)**2)
 
-x1 = float(input("x1: "))
-y1 = float(input("y1: "))
-x2 = float(input("x2: "))
-y2 = float(input("y2: "))
 
-print(distance(x1, y1, x2, y2))
+if __name__ == "__main__":
+    x1 = float(input("x1: "))
+    y1 = float(input("y1: "))
+    x2 = float(input("x2: "))
+    y2 = float(input("y2: "))
+
+    print(distance(x1, y1, x2, y2))
 
 #5 Напишите функцию, которая удаляет все небуквенные символы внутри строки (ограничимся латинским алфавитом).
 
-s = "Hello$@ Python3&12"
+
 
 def symbols_filter(s):
-    s = "Hello$@ Python3&"
     s1 = "".join(c for c in s if c.isalpha())
     return s1
 
-print(symbols_filter(s))
+
+if __name__ == "__main__":
+    s = "Hello$@ Python3&12"
+    print(symbols_filter(s))
 

@@ -27,9 +27,10 @@ class ITEmployee(Employee):
         return f"ITEmployee {self.skills}"
 
 
-i = ITEmployee("Test User", 1992, position="QA", experience=7, salary=2000)
-i.add_skill("Python")
-i.add_skill("QA")
-i.add_skills("test", "dev")
-#print(i.skills)
-print(i)
+if __name__ == "__main__":
+    i = ITEmployee("Test User", 1992, position="QA", experience=7, salary=2000)
+    i.add_skill("Python")
+    i.add_skill("QA")
+    i.add_skills("test", "dev")
+    #print(i.skills)
+    print(i)

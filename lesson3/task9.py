@@ -9,12 +9,16 @@
 
 #1
 
+
 def is_year_leap(year):
     if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
         return True
     else:
         return False
-print(is_year_leap(2021))
+
+
+if __name__ == "__main__":
+    print(is_year_leap(2021))
 
 #2
 
@@ -23,4 +27,7 @@ def triangle(a, b , c):
         return True
     else:
         return False
-print(triangle(2,2,2))
+
+
+if __name__ == "__main__":
+    print(triangle(2, 2, 2))
